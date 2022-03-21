@@ -49,5 +49,24 @@ onReady(function() {
   setVisible('#loading', false);
 });
 
+jQuery(function($){
+  $(document).ajaxSend(function() {
+    $("#overlay").fadeIn(600);　
+  });
+		
+  $('.bt14').click(function(){
+    $.ajax({
+      type: 'GET',
+      success: function(data){
+        console.log(data);
+      }
+    }).done(function() {
+      setTimeout(function(){
+        $("#overlay").fadeOut(600);
+      },1500);
+    });
+  });	
+});
+
 
 

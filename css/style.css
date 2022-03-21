@@ -15,6 +15,15 @@ body {
     font-weight: 400;
     box-sizing: border-box;
 }
+.navigate-up{
+    position: fixed;
+    z-index: 1;
+    bottom: 2%;
+    right: 1.5%;
+    border-radius: 50%;
+    width: 3.5vw;
+}
+
 h2{
     color: white;
 }
@@ -258,11 +267,11 @@ Banner
 .bgP3{
     position: absolute;
     width: 40%;
-    bottom: 6.5%;
-    left: 1%;
+    bottom: 8.5%;
+    left: 0%;
     opacity: 0.55;
     box-shadow: 0px 10px 5px 5px rgba(49, 69, 103, 0.748);
-    border-radius: 2% 2% 2% 10%;
+    border-radius: 2% 2% 2% 15%;
 }
 .bgP4{
     position: absolute;
@@ -1078,38 +1087,35 @@ Responsive media queries
     /* about-section */
 
     #about img {
-        width: 3.5vw;
+        width: 4.5vw;
         margin-right: 1%;
         border-radius: 50%;
         transition: width 1s;
     }
     #about img:hover {
-        width: 5vw;
+        width: 6vw;
     }
 
-    .det-txt{
-        padding: 2px;
-    }
 
     /* register-section */
 
     #register img {
         
         box-sizing: content-box;
-        width: 3.5vw;
+        width: 4.5vw;
         margin-right: 1%;
         border-radius: 50%;
         transition: width 1s;
         border: #000 solid 0.3vw;
     }
     #register img:hover{
-        width: 5vw;
+        width: 6vw;
         border: #000 solid 0.4vw;
     }
 
     /* courses-section  */
     .i img{
-        width: 3.5vw;
+        width: 4.5vw;
         margin-right: 1%;
         border-radius: 50%;
         transition: width 1s;
@@ -1118,7 +1124,7 @@ Responsive media queries
     }
     
     .i img:hover{
-        width: 5vw;
+        width: 6vw;
         border: #000 solid .4vw;
     }
     .icon-box img{
@@ -1196,7 +1202,6 @@ Responsive media queries
 /* loader */
 
 #loading {
-    /* display: block; */
     position: absolute;
     top: 0;
     left: 0;
@@ -1209,4 +1214,43 @@ Responsive media queries
     background-position: center;
   }
 
- 
+  #button{
+    display:block;
+    margin:20px auto;
+    padding:10px 30px;
+    background-color:#eee;
+    border:solid #ccc 1px;
+    cursor: pointer;
+  }
+  #overlay{	
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height:100%;
+    display: none;
+    /* background: rgba(0,0,0,0.6); */
+    background: #000;
+  }
+  .cv-spinner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px #ddd solid;
+    border-top: 4px #2e93e6 solid;
+    border-radius: 50%;
+    animation: sp-anime 0.8s infinite linear;
+  }
+  @keyframes sp-anime {
+    100% { 
+      transform: rotate(360deg); 
+    }
+  }
+  .is-hide{
+    display:none;
+  }
