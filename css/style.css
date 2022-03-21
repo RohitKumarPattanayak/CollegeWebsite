@@ -633,7 +633,8 @@ Courses
 .service-box{
     background: #fff;
     padding: 20px 15px 40px;
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.1);
+    border-radius: 7%;
 }
 .ser-text {
     font-size: 24px;
@@ -917,11 +918,8 @@ Footer
     width: 24%;
     padding: 10px 10px;
     margin-bottom: 15px;
-    color: #fff;: #fafafa;
-    border: 1px solid rgba(119, 81, 81, 0.34);
-    width: 24%;
-    margin-bottom: 15px;
-     -webkit-transition: all 0.3s ease-in-out;
+    color: #fff;;
+-webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1109,3 +1107,19 @@ Responsive media queries
         background-color: #2b5d83;
     }
 }
+
+/* loader */
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
