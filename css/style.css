@@ -442,6 +442,10 @@ About
     transition: width 1s;
 }
 
+.support{
+    display: none;
+}
+
 #about img:hover{
     width: 3.5vw;
 }
@@ -1033,7 +1037,7 @@ Responsive media queries
     }
     .register-form input[type="email"] {
     padding: 13px 10px;
-    font-size: 10px;
+    font-size: 10paboux;
     min-width: 187px;
     }
     .modal-sm {
@@ -1307,13 +1311,25 @@ Responsive media queries
         width: 14vw;
     }
 
+    .orga-stru{
+        background-color: #00CCFF;
+        width: 109px;
+        height: auto;
+        margin-top: 20%;
+        padding: 10px 10px 25px 10px;
+        text-align: center;
+        border-radius: 0px 80px 99px 99px;
+        -moz-border-radius: 0px 80px 99px 99px;
+        -webkit-border-radius: 0px 80px 99px 99px;
+        -o-border-radius: 0px 80px 99px 99px;
+    }
     .navigate-up{
         position: fixed;
         z-index: 1;
         bottom: 2%;
-        right: 1.5%;
+        right: 2.5%;
         border-radius: 50%;
-        width: 9.5vw;
+        width: 13vw;
     }
 
     /* .det-txt{} */
