@@ -28,9 +28,6 @@ h2{
     color: white;
 }
 
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -426,10 +423,20 @@ Banner
 /***********************************
 About
 ************************************/
+#about ul li{
+    list-style-image: url('../img/list-style-4.gif');
+}
 #about li{
     font-size: medium;
     font-weight: 400;
-    margin-top: 1vh;
+    margin-top: 2.5vh;
+}
+#about h4{
+    border-bottom: rgb(168, 168, 168) solid 3px;padding-bottom: 2.5%;width: fit-content;
+}
+#about ul{
+    margin-top:4vh ;
+    margin-bottom:3vh ;
 }
 #about p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -662,9 +669,15 @@ Courses
 .icon-box, .icon-text {
     padding: 20px 0px 0px;
 }
+
+
+
+
 /***********************************
 Mentor Team
 ************************************/
+
+
 .pm-staff-profile-image{
   width: 150px;
   height: 150px;
@@ -691,10 +704,12 @@ Mentor Team
   color: #4b4b4b;
   font-weight: 100;
 }
+
+
 /***********************************
 Testimonial
 ************************************/
-#testimonial{
+/* #testimonial{
     display: none;
     background-color: #111;
 }
@@ -708,10 +723,75 @@ Testimonial
 .text-par{
   font-size: 20px;
   padding-bottom: 15px;
-}
+} */
+
+
 /***********************************
-Course
+Institution
 ************************************/
+#Institution p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+
+
+.imghvr-fold-up{
+    position: relative;
+    
+}
+
+.imghvr-fold-up ul{
+    padding-left: 6%;
+    padding-top: 5%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+}
+
+.imghvr-fold-up ul li{
+    list-style-image: url('../img/list-style-4.gif');
+    margin-bottom: 1.1%;
+}
+
+
+.topic{
+    display: inline;
+    width: fit-content;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    border: white solid 2px;
+    padding: 2%;
+    text-shadow: 1.5px 1.5px #000 ;
+}
+
+.innerTopic{
+    width: fit-content;
+    border-bottom: white solid 3px;
+    padding-bottom: 1%;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.innerTopic2{
+    width: fit-content;
+    border-bottom: white solid 3px;
+    padding-bottom: 1%;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.topic-contents{
+    font-size: 1.1vw;
+}
+.topic-contents2{
+    font-size: .84vw;
+}
+
+
+
 [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
     background-color: darkcyan;
 }
@@ -719,6 +799,9 @@ Course
     background-color: aquamarine;
     color: #fff;
 }
+
+
+
 /***********************************
 Price Table
 ************************************/
@@ -762,9 +845,13 @@ Price Table
     font-size: 14px;
     background-color: #5fcf80;
 }
+
+
 /***********************************
 Contact Us
 ************************************/
+
+
 .contact form .form {
     width: 100%;
     height: auto;
@@ -1054,6 +1141,10 @@ Responsive media queries
     }
 }
 
+
+
+
+
 @media only screen and (max-width: 768px) and (min-width: 426px)  {
     .navbar-default .navbar-brand {
         color: #5FCF80 ;
@@ -1106,8 +1197,7 @@ Responsive media queries
     #about img:hover {
         width: 6vw;
     }
-
-
+    
     /* register-section */
 
     #register img {
@@ -1151,7 +1241,30 @@ Responsive media queries
         width: 8.5vw;
         border: #000 solid .3vw;
     }
+
+/***********************************
+Institution
+************************************/
+    .innerTopic2{
+        width: fit-content;
+        border-bottom: white solid 3px;
+        padding-bottom: 1%;
+        font-size: 2.2vw;
+        font-weight: 600;
+    }
+
+    .topic-contents2{
+        font-size: 1.5vw;
+    }
 }
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1440px){
     /* body{display: none;} */
@@ -1179,6 +1292,301 @@ Responsive media queries
         opacity: 0.5;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 766px) and (min-width: 426px)  {
+    .logopara p{
+        display: none;
+    }
+    .logostat1{
+        font-size: small;
+        border: .5px white solid;
+        margin-top: 1.5%;
+    }
+    .logocontact{
+        font-size: smaller;
+        width: 70%;
+        color: #4b4b4b;
+        font-weight: 500;
+    }
+    .socials img{
+        width: 3.6vw;
+        margin-left: 8%;
+    }
+    .logo2Desc{
+        border-radius: 15% ;
+        border: 1px solid white;
+        width: 12%;
+        position: absolute;
+        left: 2%;
+        top: 70%;
+        opacity: 0.6;
+        background-color: #2b5d83;
+    }
+ 
+    /* navbar  */
+
+    .homeIcon{
+        display: none;
+    }
+    .homeIcon2{
+        display: block;
+        margin-top: 1.5%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+    .logostat1{
+        display: none;
+    }
+    .navbar-header{
+        margin-top: 0.8%;
+        margin-bottom: 2%;
+    }
+    br.break{
+        display: none;
+    }
+    div.break{
+        display: none;
+    }
+    .logocontact{
+        display: none;
+    }
+    .logocontact2{
+        display: block;
+    }
+    .logocontact2 img{
+        width: 60%;
+        padding: 1%;
+        margin-bottom: 3.5%;
+        border-radius: 10%;
+        border: whitesmoke 0.1px solid;        
+        opacity: 0.85;
+        box-shadow: 0px 5px 5px 5px rgba(49, 69, 103, 0.748);
+    }
+    .logocontact2 img:hover{        
+        opacity: 1;
+        border: whitesmoke 0px solid;      
+        box-shadow: 0px 0px 0px 0px rgba(49, 69, 103, 0.748);
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: whitesmoke;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .navbar-default .navbar-nav > li > a > img {
+        width: 6vw;
+        padding: 0%;
+        margin: 1%;
+        transition: width 1s;
+    }
+    
+    .navbar-nav > li > a{
+        padding: 0px;
+        margin: 10px 5px;
+        padding: 10px 15px;
+        border: #E6DEDE 4px solid;
+        border-radius: 7%;
+    }
+    
+    .navbar-default .navbar-nav > li > a >img:hover{
+        width: 6vw;
+    }
+    
+    /* background  */
+
+    .section-padding{
+        padding: 0px 0px;
+    }
+    img.bgIcon{
+        display: none;
+    }
+    .bgP4{
+        display: none;
+    }
+    .bgP1{
+        position: absolute;
+        width: 45%;
+        top: 3%;
+        right: 26%;
+        opacity: 0.8;
+        box-shadow: 0px 10px 10px 10px rgba(49, 69, 103, 0.748);
+    }
+
+    /* about-section */
+
+    #about img{
+        width: 9vw;
+        margin-right: 1.8%;
+        border-radius: 50%;
+        transition: width 1s;
+    }
+    
+    #about img:hover{
+        width: 14vw;
+    }
+
+    .orga-stru{
+        background-color: #00CCFF;
+        width: 100%;
+        height: auto;
+        margin-top: 20%;
+        padding: 10px 10px 25px 10px;
+        text-align: center;
+        border-radius: 0px 80px 99px 99px;
+        -moz-border-radius: 0px 80px 99px 99px;
+        -webkit-border-radius: 0px 80px 99px 99px;
+        -o-border-radius: 0px 80px 99px 99px;
+    }
+    .navigate-up{
+        position: fixed;
+        z-index: 1;
+        bottom: 2%;
+        right: 2.5%;
+        border-radius: 50%;
+        width: 13vw;
+    }
+
+    /* .det-txt{} */
+    
+    /* register-section  */
+
+    #register{
+        padding: 7% 0;
+    }
+    h2.text-center img{
+        box-sizing: content-box;
+        width: 9vw;
+        margin-right: 1%;
+        border-radius: 50%;
+        transition: width 1s;
+        border: #000 solid .6vw;
+    }
+    
+    h2.text-center img:hover{
+        border: #000 solid .8vw;
+        width: 14vw;
+    }
+    
+    .register-form input[type="email"] {
+        padding: 14px 20px;
+        font-size: 12px;
+        color: #2b5d83;
+        font-weight: 100;
+        width: 60%;
+        margin-left: -4px;
+        margin-bottom: 2px;
+        border: 1px solid #5fcf80;
+        background-color: rgb(247, 247, 247);
+        border-radius: 30px 0px 0px 30px;
+    }
+    .register-form-submit-btn {
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #fff;
+        background-color: #00CCFF;
+        border: 2px solid #fff;
+        padding: 14px 30px;
+        margin-left: -4px;
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        border-width: 1px 1px 1px 0px;
+        border-radius: 0px 30px 30px 0px;
+    }
+
+    /* offered courses-section */
+
+    .i img{
+        width: 9vw;
+        margin-right: 1%;
+        border-radius: 50%;
+        transition: width 1s;
+        box-sizing: content-box;
+        border: #000 solid .6vw;
+    }
+    
+    .i img:hover{
+        width: 14vw;
+        border: #000 solid .8vw;
+    }
+    .icon-box img{
+        width: 20vw;
+        margin-right: 1%;
+        border-radius: 50%;
+        transition: width 1s;
+        box-sizing: content-box;
+        border: #000 solid .8vw;
+    }
+    
+    .icon-box img:hover{
+        width: 28vw;
+        border: #000 solid 1.2vw;
+    }    
+    /***********************************
+Institution
+************************************/
+    .topic{
+        display: inline;
+        width: fit-content;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        font-size: 3.5vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        border: white solid 2px;
+        padding: 2%;
+        text-shadow: 1.5px 1.5px #000 ;
+    }
+
+    .innerTopic{
+        width: fit-content;
+        border-bottom: white solid 3px;
+        padding-bottom: 1%;
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+    .innerTopic2{
+        width: fit-content;
+        border-bottom: white solid 3px;
+        padding-bottom: 1%;
+        font-size: 3.2vw;
+        font-weight: 600;
+    }
+
+    .topic-contents{
+        font-size: 2.5vw;
+    }
+    .topic-contents2{
+        font-size: 2.84vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 426px){
     .logopara p{
@@ -1409,7 +1817,63 @@ Responsive media queries
         width: 28vw;
         border: #000 solid 1.2vw;
     }
+/***********************************
+Institution
+************************************/
+    .topic{
+        display: inline;
+        width: fit-content;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        font-size: 3.5vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        border: white solid 2px;
+        padding: 2%;
+        text-shadow: 1.5px 1.5px #000 ;
+    }
+
+    .innerTopic{
+        width: fit-content;
+        border-bottom: white solid 3px;
+        padding-bottom: 1%;
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+    .innerTopic2{
+        width: fit-content;
+        border-bottom: white solid 3px;
+        padding-bottom: 1%;
+        font-size: 3.2vw;
+        font-weight: 600;
+    }
+
+    .topic-contents{
+        font-size: 2.5vw;
+    }
+    .topic-contents2{
+        font-size: 2.84vw;
+    }
 }
+
+@media only screen and (max-width: 320px){
+    .innerTopic{
+        width: fit-content;
+        border-bottom: white solid 3px;
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+    .topic-contents{
+        font-size: 2.2vw;
+    }
+}
+
+
+
+
+
+
 
 /* loader */
 
