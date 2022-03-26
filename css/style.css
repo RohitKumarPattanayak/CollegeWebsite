@@ -214,6 +214,64 @@ Navigation bar
 .mart20{
 	margin-top: 20px;
 }
+
+/* dropdown  */
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+  .navbar .dropdown ul li {
+    min-width: 200px;
+  }
+  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 500;
+  }
+  .navbar .dropdown ul a i {
+    font-size: 12px;
+  }
+  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    color: #5fcf80;
+  }
+  .navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+  @media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+    .navbar .dropdown .dropdown:hover > ul {
+      left: -100%;
+    }
+  }
+
 /***********************************
 Banner
 ************************************/
@@ -733,12 +791,53 @@ Institution
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
 }
-
-
+#Institution container:nth-child(){
+}
+ .img1 img{
+    opacity: 0;
+}
+ .img2 img{
+    opacity: 0;
+}
+ .img3 img{
+    opacity: 0;
+}
+ .img4 img{
+    opacity: 0;
+}
+ .img5 img{
+    opacity: 0;
+}
+ .img6 img{
+    opacity: 0;
+}
+ .img7 img{
+    opacity: 0;
+}
+.img1{
+    background-color: #03254c;
+}
+.img2{
+    background-color: #1167b1;
+}
+.img3{
+    background-color: #187bcd;
+}
+.img4{
+    background-color: #2a9df4;
+}
+.img5{
+    background-color: #0077b6;
+}
+.img6{
+    background-color: #00b4d8;
+}
+.img7{
+    background-color: #90e0ef;
+}
 
 .imghvr-fold-up{
-    position: relative;
-    
+    position: relative;    
 }
 
 .imghvr-fold-up ul{
@@ -758,14 +857,14 @@ Institution
     display: inline;
     width: fit-content;
     position: absolute;
-    top: 2%;
-    left: 2%;
+    top: 5%;
+    left: 3%;
     font-size: 2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    border: white solid 2px;
+    border: white solid 1vh;
     padding: 2%;
-    text-shadow: 1.5px 1.5px #000 ;
+    text-shadow: 2.5px 2.5px #000 ;
 }
 
 .innerTopic{
@@ -793,10 +892,9 @@ Institution
 
 
 [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
-    background-color: darkcyan;
+    background-color: black;
 }
 [class*=" imghvr-"], [class^="imghvr-"] {
-    background-color: aquamarine;
     color: #fff;
 }
 
@@ -1862,10 +1960,11 @@ Institution
         width: fit-content;
         border-bottom: white solid 3px;
         font-size: 3.5vw;
+        padding-bottom: 0.7%;
         font-weight: 600;
     }
     .topic-contents{
-        font-size: 2.2vw;
+        font-size: 2.09vw;
     }
 }
 
