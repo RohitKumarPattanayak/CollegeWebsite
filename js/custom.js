@@ -1,6 +1,5 @@
 (function($) {
 
-  // Navigation scrolls
   $(".navbar-nav li a").on('click', function(event) {
     $('.navbar-nav li').removeClass('active');
     $(this).closest('li').addClass('active');
@@ -30,7 +29,7 @@
   });
 })(jQuery);
 
-
+// loading 
 function onReady(callback) {
   var intervalId = window.setInterval(function() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -39,16 +38,15 @@ function onReady(callback) {
     }
   }, 3000);
 }
-
 function setVisible(selector, visible) {
   document.querySelector(selector).style.display = visible ? 'block' : 'none';
 }
-
 onReady(function() {
   setVisible('body', true);
   setVisible('#loading', false);
 });
 
+// btn loading 
 jQuery(function($){
   $(document).ajaxSend(function() {
     $("#overlay").fadeIn(600);　

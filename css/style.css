@@ -1,10 +1,3 @@
-/*
-    Theme Name: Mentor
-    Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
-
 body {
 	font-size: 15px;
     line-height: 1.52;
@@ -22,6 +15,11 @@ body {
     right: 1.5%;
     border-radius: 50%;
     width: 3.5vw;
+}
+.bt14:hover{
+    border-bottom: rgb(148, 148, 148) solid 1px;
+    /* border-top: rgb(199, 199, 199) solid 1px; */
+    border-radius: 10%;
 }
 
 h2{
@@ -498,7 +496,8 @@ About
 }
 #about p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: medium;
+    font-size: large;
+    font-weight: 500;
 }
 #about img{
     width: 2.5vw;
@@ -729,8 +728,96 @@ Courses
 }
 
 
-
-
+/*--------------------------------------------------------------
+# Trainers
+--------------------------------------------------------------*/
+.breadcrumbs {
+    margin-top: 73px;
+    text-align: center;
+    background: #0077b6;
+    padding: 30px 0;
+    color: #fff;
+    margin-bottom: 4% ;
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 63px;
+    }
+  }
+  .breadcrumbs h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .breadcrumbs p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+.trainers .member {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #eef0ef;
+  }
+  .trainers .member img {
+    margin: -1px -1px 30px -1px;
+  }
+  .trainers .member .member-content {
+    padding: 0 20px 30px 20px;
+  }
+  .trainers .member h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+  }
+  .trainers .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+  }
+  .trainers .member p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #aaaaaa;
+  }
+  .trainers .member .social {
+    margin-top: 15px;
+  }
+  .trainers .member .social a {
+    color: #7e9486;
+    transition: 0.3s;
+  }
+  .trainers .member .social a:hover {
+    color: #5fcf80;
+  }
+  .trainers .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+  .img-fluid{
+      width: 90%;
+      border-radius: 50%;
+      /* margin: 14%; */
+      box-shadow: 0px 10px 10px 10px rgba(49, 69, 103, 0.748);
+      transition: box-shadow .5s linear, padding .6s linear;
+      transition: box-shadow .5s linear, padding .6s linear;
+  }
+   .img-fluid:hover{
+      
+    padding: 10%;
+      box-shadow: 0px 0px 0px 0px rgba(49, 69, 103, 0.748);
+  }
+  .member{
+      border-radius: 4%;
+      opacity: 0.75;
+      transition: border-radius 1s , background-color 1s ease-in ,opacity 1s;
+      
+  }
+  .member:hover{
+      border-radius: 30% 30% 20% 20%;
+      opacity: 1;
+      background-color: rgb(34, 33, 33);
+  }
 /***********************************
 Mentor Team
 ************************************/
@@ -790,6 +877,7 @@ Institution
 #Institution p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
+    font-size: large;
 }
 #Institution container:nth-child(){
 }
