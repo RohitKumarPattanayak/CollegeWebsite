@@ -498,6 +498,10 @@ About
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
     font-weight: 500;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 #about img{
     width: 2.5vw;
@@ -681,6 +685,10 @@ Courses
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     font-size: large;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .i img{
@@ -732,12 +740,16 @@ Courses
 # Trainers
 --------------------------------------------------------------*/
 .breadcrumbs {
-    margin-top: 73px;
+    margin-top: 2%;
     text-align: center;
     background: #0077b6;
     padding: 30px 0;
     color: #fff;
+    padding: 1.5%;
     margin-bottom: 4% ;
+    width: fit-content;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    opacity: .9;
   }
   @media (max-width: 992px) {
     .breadcrumbs {
@@ -746,11 +758,23 @@ Courses
   }
   .breadcrumbs h2 {
     font-size: 32px;
-    font-weight: 500;
+    width: fit-content;
+    font-weight: 1100;
+    border-bottom: 4px solid whitesmoke; 
   }
   .breadcrumbs p {
-    font-size: 14px;
     margin-bottom: 0;
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .scnd_para p{
+    font-size: medium;
+  }
+  .breadcrumbs span {
+    font-size: medium;
+    font-weight: 1000;
+    float: right;
   }
 .trainers .member {
     text-align: center;
@@ -773,6 +797,7 @@ Courses
     font-style: italic;
     display: block;
     font-size: 13px;
+    color: silver;
   }
   .trainers .member p {
     padding-top: 10px;
@@ -784,7 +809,6 @@ Courses
     margin-top: 15px;
   }
   .trainers .member .social a {
-    color: #7e9486;
     transition: 0.3s;
   }
   .trainers .member .social a:hover {
@@ -817,40 +841,12 @@ Courses
       border-radius: 30% 30% 20% 20%;
       opacity: 1;
       background-color: rgb(34, 33, 33);
+      color: white;
   }
-/***********************************
-Mentor Team
-************************************/
-
-
-.pm-staff-profile-image{
-  width: 150px;
-  height: 150px;
-  background-color: #C6C6C6;
-  border-radius: 50%;
-  display: inline-block;
-}
-.pm-staff-profile-details {
-    padding: 20px 20px;
-}
-.pm-staff-profile-name {
-    font-size: 24px;
-    text-transform: capitalize;
-    color: #2b5d83;
-}
-.pm-staff-profile-title {
-    text-transform: capitalize;
-    color: #4b4b4b;
-    font-weight: 500;
-    padding: 12px 0px;
-}
-.pm-staff-profile-bio {
-  text-transform: capitalize;
-  color: #4b4b4b;
-  font-weight: 100;
-}
-
-
+  .member-content:hover{
+      color: white;
+  }
+  
 /***********************************
 Testimonial
 ************************************/
@@ -878,6 +874,10 @@ Institution
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     font-size: large;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 #Institution container:nth-child(){
 }
@@ -1225,11 +1225,13 @@ Footer
 .footer .form-control:focus{
     box-shadow: none;
 }
+
 /***********************************
 ************************************
 Responsive media queries
 ************************************
 ***********************************/
+
 @media (min-width: 769px) and (max-width: 980px) {
     .ser-text {
     font-size: 20px;
@@ -1444,6 +1446,36 @@ Institution
     .topic-contents2{
         font-size: 1.5vw;
     }
+
+/*--------------------------------------------------------------
+# Trainers
+--------------------------------------------------------------*/
+.breadcrumbs {
+    margin-top: 2%;
+    text-align: center;
+    background: #0077b6;
+    padding: 30px 0;
+    color: #fff;
+    padding: 1%;
+    margin-bottom: 4% ;
+    width: fit-content;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    opacity: .9;
+  }
+  .breadcrumbs p {
+    margin-bottom: 0;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .scnd_para p{
+    font-size: small;
+  }
+  .breadcrumbs span {
+    font-size: small;
+    font-weight: 800;
+    float: right;
+  }
 }
 
 
@@ -1723,7 +1755,7 @@ Institution
         width: 28vw;
         border: #000 solid 1.2vw;
     }    
-    /***********************************
+/***********************************
 Institution
 ************************************/
     .topic{
@@ -1761,6 +1793,35 @@ Institution
     .topic-contents2{
         font-size: 2.84vw;
     }
+/*--------------------------------------------------------------
+# Trainers
+--------------------------------------------------------------*/
+.breadcrumbs {
+    margin-top: 2%;
+    text-align: center;
+    background: #0077b6;
+    padding: 30px 0;
+    color: #fff;
+    padding: 1%;
+    margin-bottom: 4% ;
+    width: fit-content;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    opacity: .9;
+  }
+  .breadcrumbs p {
+    margin-bottom: 0;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .scnd_para p{
+    font-size: small;
+  }
+  .breadcrumbs span {
+    font-size: small;
+    font-weight: 800;
+    float: right;
+  }
 }
 
 
@@ -1903,6 +1964,10 @@ Institution
         border-radius: 50%;
         transition: width 1s;
     }
+
+    #about p{
+        font-size: small;
+    }
     
     #about img:hover{
         width: 14vw;
@@ -1935,6 +2000,9 @@ Institution
 
     #register{
         padding: 7% 0;
+    }
+    #register p{
+        font-size: small;
     }
     h2.text-center img{
         box-sizing: content-box;
@@ -1980,6 +2048,10 @@ Institution
 
     /* offered courses-section */
 
+    #courses p{
+        font-size: small;
+    }
+
     .i img{
         width: 9vw;
         margin-right: 1%;
@@ -2009,6 +2081,11 @@ Institution
 /***********************************
 Institution
 ************************************/
+    
+    #Institution p{
+        font-size: small;
+    }
+
     .topic{
         display: inline;
         width: fit-content;
@@ -2044,6 +2121,42 @@ Institution
     .topic-contents2{
         font-size: 2.84vw;
     }
+/*--------------------------------------------------------------
+# Trainers
+--------------------------------------------------------------*/
+.breadcrumbs {
+    margin-top: 2%;
+    text-align: center;
+    background: #0077b6;
+    padding: 30px 0;
+    color: #fff;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    margin-bottom: 4% ;
+    width: fit-content;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    opacity: .9;
+  }
+  .breadcrumbs p {
+    margin-bottom: 0;
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .scnd_para p{
+    font-size: small;
+  }
+  .breadcrumbs span {
+    font-size: small;
+    font-weight: 600;
+    float: right;
+  }
+  .breadcrumbs h2 {
+    font-size: 22px;
+    width: fit-content;
+    font-weight: 900;
+    border-bottom: 4px solid whitesmoke; 
+  }
 }
 
 @media only screen and (max-width: 320px){
