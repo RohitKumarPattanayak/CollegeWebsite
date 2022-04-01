@@ -36,7 +36,7 @@ function onReady(callback) {
       window.clearInterval(intervalId);
       callback.call(this);
     }
-  }, 30);
+  }, 3000);
 }
 function setVisible(selector, visible) {
   document.querySelector(selector).style.display = visible ? 'block' : 'none';
