@@ -16,12 +16,6 @@ body {
     border-radius: 50%;
     width: 3.5vw;
 }
-.bt14:hover{
-    border-bottom: rgb(148, 148, 148) solid 1px;
-    /* border-top: rgb(199, 199, 199) solid 1px; */
-    border-radius: 10%;
-}
-
 h2{
     color: white;
 }
@@ -792,6 +786,7 @@ Courses
     font-weight: 700;
     margin-bottom: 2px;
     font-size: 18px;
+    color: rgb(215, 169, 52);
   }
   .trainers .member span {
     font-style: italic;
