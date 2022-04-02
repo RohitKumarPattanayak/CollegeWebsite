@@ -495,7 +495,7 @@ Principal's desk
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .principal-desk p{
-    font-size: medium;
+    font-size: large;
 }
 .principal-desk h3{
     padding-bottom: .7%;
@@ -503,25 +503,25 @@ Principal's desk
     width: fit-content;
     margin-bottom: 2%;
     color: #17B1D3;
-    font-size: medium;
+    font-size: larger;
 }
 
 .intro-princi{
     position: absolute;
     background-color: wheat;
     color: #000;
-    bottom: 7%;
-    right: 33%;
+    bottom: 9%;
+    right: 32%;
     border: 3px white solid;
     box-shadow: 0px 1px 1px 1px rgba(4, 4, 4, 0.75);
-    font-size: small;
+    font-size: smaller;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 }
 .intro-princi p{
     margin: 0;
     padding: 0;
-    font-size: .65vw;
+    font-size: .75vw;
     font-weight: 400;
 }
 
@@ -531,14 +531,16 @@ Principal's desk
     width: 100%;
     box-shadow: 0px 10px 10px 10px rgb(49 69 103 / 75%);
     transition: box-shadow .5s linear, padding .6s linear;
+    border: white .1px solid;
 }
 .image-fluid:hover {
     box-shadow: 0px 0px 0px 0px rgba(49, 69, 103, 0.748);
+    border: none;
 }
     
 
 section {
-    padding: 60px 0;
+    padding: 10px 0;
     overflow: hidden;
   }
   
@@ -570,12 +572,13 @@ section {
   }
   .section-title p {
     margin: 0;
-    margin: 0;
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #37423b;
+    border-bottom: white 4px solid;
+    width: fit-content;
   }
  /* --Testimonials */
 
@@ -613,7 +616,7 @@ section {
     margin: 0;
   }
   .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-    color: #c1ecce;
+    color: yellowgreen;
     font-size: 26px;
   }
   .testimonials .testimonial-item .quote-icon-left {
@@ -629,6 +632,7 @@ section {
   }
   .testimonials .testimonial-item p {
     font-style: italic;
+    color: #000;
     margin: 15px auto 15px auto;
   }
   .testimonials .swiper-pagination {
@@ -883,6 +887,7 @@ Courses
 
 .i img{
     width: 2.5vw;
+    padding: .16vw;
     margin-right: 1%;
     border-radius: 50%;
     transition: width 1s;
@@ -1229,7 +1234,16 @@ Price Table
 /***********************************
 Contact Us
 ************************************/
-
+#contact p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
 .contact form .form {
     width: 100%;
@@ -1259,7 +1273,12 @@ Contact Us
 .white{
     color: #fff !important;
 }
-
+#submit{
+    margin: 2%;
+}
+#submit:hover{
+    background-color: #9ae1af;
+}
 .validation {
     color: red;
     display:none;
@@ -1667,6 +1686,37 @@ Institution
     font-weight: 800;
     float: right;
   }
+  /**********************************
+  principal's desk
+  **********************************/
+  .intro-princi{
+    position: absolute;
+    background-color: wheat;
+    color: #000;
+    bottom: 2%;
+    right: 28%;
+    border: 3px white solid;
+    box-shadow: 0px 1px 1px 1px rgba(4, 4, 4, 0.75);
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.intro-princi p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+.image-fluid {
+    padding: 5%;
+    padding-bottom: 13%;
+    width: 60%;
+    margin: 0%;
+    box-shadow: 0px 10px 10px 10px rgb(49 69 103 / 75%);
+    transition: box-shadow .5s linear, padding .6s linear;
+    border: white .1px solid;
+}
 }
 
 
@@ -1707,7 +1757,26 @@ Institution
 
 
 
-
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .intro-princi{
+        position: absolute;
+        background-color: wheat;
+        color: #000;
+        bottom: 28%;
+        right: 0%;
+        border: 3px white solid;
+        box-shadow: 0px 1px 1px 1px rgba(4, 4, 4, 0.75);
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+    }
+    .intro-princi p{
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
+        font-weight: 400;
+    }
+}
 
 
 
@@ -2013,6 +2082,37 @@ Institution
     font-weight: 800;
     float: right;
   }
+    /**********************************
+  principal's desk
+  **********************************/
+  .intro-princi{
+    position: absolute;
+    background-color: wheat;
+    color: #000;
+    bottom: 2%;
+    right: 28%;
+    border: 3px white solid;
+    box-shadow: 0px 1px 1px 1px rgba(4, 4, 4, 0.75);
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.intro-princi p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+.image-fluid {
+    padding: 5%;
+    padding-bottom: 13%;
+    width: 60%;
+    margin: 0%;
+    box-shadow: 0px 10px 10px 10px rgb(49 69 103 / 75%);
+    transition: box-shadow .5s linear, padding .6s linear;
+    border: white .1px solid;
+}
 }
 
 
@@ -2348,6 +2448,62 @@ Institution
     font-weight: 900;
     border-bottom: 4px solid whitesmoke; 
   }
+
+/*****************************************
+Principal's desk
+*****************************************/
+.principal-desk li{
+    list-style-image: url('../img/list-style-4.gif');
+    margin-bottom: 2%;
+    margin-right: 2%;
+    font-size: small;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.principal-desk p{
+    font-size: smaller;
+}
+.principal-desk h3{
+    font-size: larger;
+}
+
+.intro-princi{
+    position: absolute;
+    background-color: wheat;
+    color: #000;
+    bottom: 3%;
+    right: 22%;
+    border: 3px white solid;
+    box-shadow: 0px 1px 1px 1px rgba(4, 4, 4, 0.75);
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.intro-princi p{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.image-fluid {
+    padding: 5%;
+    padding-bottom: 20%;
+    width: 100%;
+    box-shadow: 0px 10px 10px 10px rgb(49 69 103 / 75%);
+    transition: box-shadow .5s linear, padding .6s linear;
+    border: white .1px solid;
+}
+
+  .section-title p {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #37423b;
+    border-bottom: white 4px solid;
+    width: fit-content;
+  }
 }
 
 @media only screen and (max-width: 320px){
@@ -2360,6 +2516,17 @@ Institution
     }
     .topic-contents{
         font-size: 2.09vw;
+    }
+    .intro-princi{
+        bottom: 2%;
+        right: 18.5%;
+    }
+    .image-fluid {
+        font-size: x-small;
+    }
+    .section-title p {
+        font-size: large;
+        margin-top: 4%;
     }
 }
 
