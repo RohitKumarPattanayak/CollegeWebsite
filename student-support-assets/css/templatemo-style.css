@@ -1,0 +1,223 @@
+  @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
+
+  body {
+    background: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /*---------------------------------------
+      COURSES             
+  -----------------------------------------*/
+  .owl-carousel{
+    margin-bottom: 7%;
+  }
+  .headings {
+    width: fit-content;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    padding-bottom: 1%;
+    border-bottom: 1vh black solid;
+    color: black;
+    padding: 1%;
+    box-shadow: 0px 0px 10px 10px rgba(21, 67, 76, 0.353);
+    box-sizing: content-box;
+  }
+
+.courses-detail ul{
+    padding-left: 6%;
+    padding-top: 5%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+}
+
+.courses-detail ul li{
+    list-style-image: url('../../img/list-style-4.gif');
+    margin-bottom: 1.1%;
+}
+
+  #courses .section-title {
+    text-align: center;
+  }
+
+  #courses .owl-theme .owl-nav {
+    margin-top: 30px;
+  }
+
+  #courses .owl-theme .owl-nav [class*=owl-] {
+    border-radius: 2px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .courses-thumb {
+    background: black;
+    position: relative;
+  }
+
+  .courses-detail {
+    padding: 25px 25px 15px 25px;
+  }
+
+  .courses-detail div{  
+    font-size: medium;
+  }
+
+  .owl-carousel .owl-item img{
+    display: inline;
+    width: 2vw;
+    margin-right: 2%;
+    transition: width 1s;
+  }
+  .heads{
+    padding-bottom: 2%;
+    border-bottom: whitesmoke solid 3px;
+  }
+.owl-next{
+  box-shadow: 1px 2px 1px 2px rgba(21, 67, 76, 0.353);
+}
+.owl-prev{
+  box-shadow: 1px 2px 1px 2px rgba(21, 67, 76, 0.353);
+}
+  /*---------------------------------------
+      TESTIMONIAL             
+  -----------------------------------------*/
+
+  #testimonial .item {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 4em 3em;
+    text-align: left;
+  }
+
+  #courses .col-md-4,
+  #testimonial .col-md-4 {
+    display: block;
+    width: 100%;
+  }
+
+  #testimonial .item > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .tst-rating {
+    margin-bottom: 15px;
+  }
+
+  .tst-rating .fa {
+    color: #3f51b5;
+  }
+
+  .tst-image,
+  .tst-author {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .tst-author h4 {
+    margin: 0;
+  }
+
+  .tst-author span {
+    color: #808080;
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    section,
+    footer {
+      padding: 60px 0;
+    }
+
+    .home-slider .item {
+      background-position: center center;
+    }
+
+    .feature-thumb,
+    .about-info,
+    .team-thumb,
+    .footer-info {
+      margin-bottom: 50px;
+    }
+
+    .contact-image {
+      margin-top: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 426px)  {
+      
+  .owl-carousel .owl-item img{
+    display: inline;
+    width: 6vw;
+    margin-right: 2%;
+    transition: width 1s;
+  }
+  .courses-detail div{  
+    font-size: larger;
+  }
+  .courses-detail li{  
+    font-size: large;
+  }
+
+  }
+    
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .owl-carousel .owl-item img{
+      display: inline;
+      width: 3vw;
+      margin-right: 2%;
+      transition: width 1s;
+    }
+    .courses-detail div{  
+      font-size: smaller;
+    }
+    .courses-detail li{  
+      font-size: small;
+    }
+  }
+
+  @media only screen and (max-width: 766px) and (min-width: 426px)  {
+    .owl-carousel .owl-item img{
+      display: inline;
+      width: 6vw;
+      margin-right: 2%;
+      transition: width 1s;
+    }
+    .courses-detail div{  
+      font-size: larger;
+    }
+    .courses-detail li{  
+      font-size: large;
+    }
+  }
+
+  @media only screen and (max-width: 426px) {
+    .owl-carousel .owl-item img{
+      display: inline;
+      width: 10vw;
+      margin-right: 2%;
+      transition: width 1s;
+    }
+    .headings {
+      font-size: 5vw;
+      font-size: 5vw;
+    }
+    .courses-detail div{  
+      font-size: smaller;
+    }
+    .courses-detail li{  
+      font-size: small;
+    }
+  }
+  /*
+    @media only screen and (max-width: 426px) {
+    @media only screen and (max-width: 320px){ */
