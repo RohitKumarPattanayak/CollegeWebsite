@@ -1432,10 +1432,7 @@ gallery
     margin-left: 45%;
 }
 
-gallery2{
-    width: fit-content;
-    height: fit-content;
-}
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .gallery-img-wrap img{
         height: 20vh;
@@ -1476,7 +1473,7 @@ gallery2{
         height: 10vh;
         width: 15vw;
         border: 1.5vh solid white;
-        margin-left: 25%;
+        margin-left: 5%;
     }
     .gallery-section2 .button-group button{
         font-size: 2vw;
