@@ -834,7 +834,6 @@ h2.text-center img:hover{
     text-align: center;
     margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 34px !important;
 }
 .register-form input[type="email"] {
     border: 0px solid #CCC;
@@ -1252,7 +1251,7 @@ Amission
 }
 
 #admission .img1{
-    background-color: rgb(189, 171, 149);
+    background-color: rgb(189, 165, 135);
 }
 #admission .img2{
     background-color: rgb(189, 165, 135);
@@ -1344,7 +1343,6 @@ Amission
 [class*=" imghvr-"], [class^="imghvr-"] {
     color: #fff;
 }
-
 @media only screen and (max-width: 768px) and (min-width: 426px)  {
     .spcl{
         height: 30vw;
@@ -1355,15 +1353,30 @@ Amission
         height: 30vw;
     }   
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 426px) {    
+    #admission p{
+        font-size: small;
+        margin: 5%;
+    }
+    #admission .topic{
+        left: 8%;
+        font-size: 3.5vw;
+    }
     .spcl{
         height: 60vw;
     }   
     #admission .innerTopic{
         font-size: smaller;
     }
+    #admission .topic-contents li{
+        font-size: 2.4vw;
+    }
 }
 @media only screen and (max-width: 320px){ 
+    #admission p{
+        font-size: small;
+        margin: 8%;
+    }
     .spcl{
         height: 85vw;
     }   
@@ -1372,8 +1385,101 @@ Amission
     }
     #admission .topic-contents li{
         padding-bottom: 1%;
-        font-size: 3vw;
+        font-size: 2.6vw;
         font-weight: 500;
+    }    
+}
+
+
+/***********************************************
+gallery
+***********************************************/
+
+.gallery-section2 .button-group {
+	text-align: center;
+	position: relative;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    border-bottom: white 4px solid;
+}
+
+.gallery-section2 .button-group button{
+	background: transparent;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	position: relative;
+    padding: .4%;
+    background-color: #00CCFF;
+    font-size: 1.4vw;
+    box-shadow: 0px 3px 3px 3px rgba(150, 176, 227, 0.748);
+    margin: 1%;
+}
+.gallery-section2 .button-group button:hover{
+    color: #5FCF80;
+}
+.gallery-section2 .button-group button:focus{
+    box-shadow: 0px 1px 1px 1px rgba(150, 176, 227, 0.748);
+    background-color: transparent;
+    color: #5FCF80;
+    border: 1px grey solid;
+}
+
+.gallery-img-wrap img{
+    height: 30vh;
+    width: 20vw;
+    border: 5vh solid white;
+    margin-left: 45%;
+}
+
+gallery2{
+    width: fit-content;
+    height: fit-content;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .gallery-img-wrap img{
+        height: 20vh;
+        width: 15vw;
+        border: 4vh solid white;
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 426px)  {
+    .gallery-img-wrap img{
+        height: 20vh;
+        width: 15vw;
+        border: 4vh solid white;
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 766px) and (min-width: 426px)  {
+    .gallery-img-wrap img{
+        height: 20vh;
+        width: 15vw;
+        border: 4vh solid white;
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 426px) {    
+    .gallery-img-wrap img{
+        height: 10vh;
+        width: 15vw;
+        border: 2vh solid white;
+        margin-left: 25%;
+    }
+    .gallery-section2 .button-group button{
+        font-size: 2.5vw;
+    }
+}
+@media only screen and (max-width: 320px){ 
+    .gallery-img-wrap img{
+        height: 10vh;
+        width: 15vw;
+        border: 1.5vh solid white;
+        margin-left: 25%;
+    }
+    .gallery-section2 .button-group button{
+        font-size: 2vw;
     }
 }
 
@@ -2441,7 +2547,7 @@ Institution
         padding: 7% 0;
     }
     #register p{
-        font-size: small;
+        font-size: large;
     }
     h2.text-center img{
         box-sizing: content-box;
@@ -2560,6 +2666,9 @@ Institution
     .topic-contents2{
         font-size: 2.84vw;
     }
+    .imghvr-fold-up ul li{
+        margin-bottom: 0%;
+    }
 /*--------------------------------------------------------------
 # Trainers
 --------------------------------------------------------------*/
@@ -2652,6 +2761,13 @@ Principal's desk
     border-bottom: white 4px solid;
     width: fit-content;
   }
+  /**********************************************
+  constact
+  **********************************************/
+  #contact p{
+      font-size: small;
+  }
+
 }
 
 @media only screen and (max-width: 320px){
@@ -2675,6 +2791,12 @@ Principal's desk
     .section-title p {
         font-size: large;
         margin-top: 4%;
+    }
+    .topic-contents li{
+        font-size: 1.91vw;
+    }
+    .imghvr-fold-up ul li{
+        margin-bottom: 0%;
     }
 }
 
