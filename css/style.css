@@ -1369,7 +1369,7 @@ Amission
         font-size: smaller;
     }
     #admission .topic-contents li{
-        font-size: 2.4vw;
+        font-size: 2.2vw;
     }
 }
 @media only screen and (max-width: 320px){ 
@@ -1462,7 +1462,7 @@ gallery
         height: 10vh;
         width: 15vw;
         border: 2vh solid white;
-        margin-left: 25%;
+        margin-left: 0%;
     }
     .gallery-section2 .button-group button{
         font-size: 2.5vw;
@@ -1473,7 +1473,7 @@ gallery
         height: 10vh;
         width: 15vw;
         border: 1.5vh solid white;
-        margin-left: 5%;
+        margin-left: 0%;
     }
     .gallery-section2 .button-group button{
         font-size: 2vw;
