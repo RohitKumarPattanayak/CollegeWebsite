@@ -56,7 +56,7 @@ jQuery(function($){
     $.ajax({
       type: 'GET',
       success: function(data){
-        console.log(data);
+        // console.log(data);
       }
     }).done(function() {
       setTimeout(function(){
@@ -66,5 +66,44 @@ jQuery(function($){
   });	
 });
 
+// ****************************
+// contact-form sending email 
+// ****************************
+var stat = ''
+function SendEmail(e){
+  var name = document.getElementById('name').value
+  var email = document.getElementById('email').value
+  var sub = document.getElementById('subject').value
+  var msg = document.getElementById('message').value
+  var phn = document.getElementById('number').value
 
+  var body = 'Name : '+name+'.<br/>'+
+              'Phone : '+phn+'.<br/>'+
+              'Email : '+email+'.<br/>'+
+              '<br/>'+
+              'Subject : '+sub+'.<br/>'+
+              '<br/>'+              
+              'Message : '+msg+'.<br/>'
+if (phn != '' && email != '' && name != '' && sub != '' && msg != ''){
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "rohitkumarpattanayak@gmail.com",
+    Password : "tfbtuulsekbzyvgl",
+    To : 'rohitkumarpattanayak@gmail.com',
+    From : email,
+    Subject : "Query from website",
+    Body : body
+  }).then(function(message){
+    if (message == 'OK'){
+      swal("Email sent successfully!", "", "success");
+    }else{
+      swal("Email could not be sent!", "", "error");
+    }
+  });
+  setTimeout("location.reload(true);",4500);
+  
+}else{
+  swal("Please fill all details!", "", "warning");
+}
+}
 
