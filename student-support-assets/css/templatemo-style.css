@@ -9,6 +9,27 @@
   /*---------------------------------------
       COURSES             
   -----------------------------------------*/
+  #courses{
+    background: -webkit-gradient(linear, left bottom, right top, from(#E6DEDE), to(rgb(124, 118, 118))); 
+    background: -webkit-linear-gradient(bottom left, #E6DEDE 0%, rgb(124, 118, 118) 100%);
+    background: -moz-linear-gradient(bottom left, #E6DEDE 0%, rgb(124, 118, 118) 100%);
+    background: -o-linear-gradient(bottom left, #E6DEDE 0%, rgb(124, 118, 118) 100%);
+    background: linear-gradient(to top right, #E6DEDE 0%, rgb(124, 118, 118) 100%);
+  }
+  #studSuport{
+    background: -webkit-gradient(linear, left bottom, right top, from(#E6DEDE), to(rgb(83, 78, 78))); 
+    background: -webkit-linear-gradient(bottom left, #E6DEDE 0%, rgb(83, 78, 78) 100%);
+    background: -moz-linear-gradient(bottom left, #E6DEDE 0%, rgb(83, 78, 78) 100%);
+    background: -o-linear-gradient(bottom left, #E6DEDE 0%, rgb(83, 78, 78) 100%);
+    background: linear-gradient(to top right, #E6DEDE 0%, rgb(83, 78, 78) 100%);
+  }
+  #breadcrumbs{
+    background: -webkit-gradient(linear, left bottom, right top, from(#E6DEDE), to(whitesmoke)); 
+    background: -webkit-linear-gradient(bottom left, #E6DEDE 0%, whitesmoke 100%);
+    background: -moz-linear-gradient(bottom left, #E6DEDE 0%, whitesmoke 100%);
+    background: -o-linear-gradient(bottom left, #E6DEDE 0%, whitesmoke 100%);
+    background: linear-gradient(to top right, #E6DEDE 0%, whitesmoke 100%);
+  }
   .owl-carousel{
     margin-bottom: 7%;
   }

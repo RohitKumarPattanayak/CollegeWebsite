@@ -2,7 +2,11 @@ body {
 	font-size: 15px;
     line-height: 1.52;
     color: whitesmoke;
-    background-color: #2b5d83;
+    background: -webkit-gradient(linear, left bottom, right top, from(#2B5D83), to(#082e4a)); 
+    background: -webkit-linear-gradient(bottom left, #2B5D83 0%, #082e4a 100%);
+    background: -moz-linear-gradient(bottom left, #2B5D83 0%, #082e4a 100%);
+    background: -o-linear-gradient(bottom left, #2B5D83 0%, #082e4a 100%);
+    background: linear-gradient(to top right, #2B5D83 0%, #082e4a 100%);
     font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -115,6 +119,14 @@ regiter-animated-button
   /* ! register-animated-over  */
 
 
+.AboveNav{
+    background: -webkit-gradient(linear, left bottom, right top, from(#17B1D3), to(#2B5D83)); 
+    background: -webkit-linear-gradient(bottom left, #17B1D3 0%, #2B5D83 100%);
+    background: -moz-linear-gradient(bottom left, #17B1D3 0%, #2B5D83 100%);
+    background: -o-linear-gradient(bottom left, #17B1D3 0%, #2B5D83 100%);
+    background: linear-gradient(to top right, #17B1D3 0%, #2B5D83 100%);
+}  
+
 h2{
     color: white;
 }
@@ -155,9 +167,7 @@ Navigation bar
     width: 11%;
 }
 .logo2{
-    border-radius: 25% ;
-    border: 1px solid white;
-    width: 12%;
+    width: 11%;
     position: absolute;
     left: 2%;
     top: 19%;
@@ -300,7 +310,11 @@ Navigation bar
 }
 .navbar {
     margin-bottom: 0px;
-    background-color:#2b5d83 ;
+    background: -webkit-gradient(linear, left bottom, right top, from(#2B5D83), to(#082e4a)); 
+    background: -webkit-linear-gradient(bottom left, #2B5D83 0%, #082e4a 100%);
+    background: -moz-linear-gradient(bottom left, #2B5D83 0%, #082e4a 100%);
+    background: -o-linear-gradient(bottom left, #2B5D83 0%, #082e4a 100%);
+    background: linear-gradient(to top right, #2B5D83 0%, #082e4a 100%);
     border: none;
 
 }
@@ -426,7 +440,7 @@ Banner
 .bgP2{
     width: 100%;
     border-radius: 15%;
-    box-shadow: 0px 10px 10px 10px rgba(49, 69, 103, 0.748);
+    box-shadow: 0px 10px 10px 10px rgba(42, 49, 60, 0.748);
 }
 
 .bgP3{
@@ -856,7 +870,7 @@ h2:hover{
  Organisations
 ************************************/
 #organisations{
-    background-color: rgb(247, 247, 247);
+    background-color: #f4eeee;
 }
 .orga-stru
 {
@@ -913,7 +927,11 @@ p.det-p {
 Courses
 ************************************/
 #courses {
-    background-color: rgb(230, 222, 222);
+    background: -webkit-gradient(linear, left bottom, right top, from(#E6DEDE), to(rgb(173, 165, 165))); 
+    background: -webkit-linear-gradient(bottom left,                  #E6DEDE 0%,  rgb(173, 165, 165) 100%);
+    background: -moz-linear-gradient(bottom left,                     #E6DEDE 0%,  rgb(173, 165, 165) 100%);
+    background: -o-linear-gradient(bottom left,                       #E6DEDE 0%,  rgb(173, 165, 165) 100%);
+    background: linear-gradient(to top right,                         #E6DEDE 0%,  rgb(173, 165, 165) 100%);
 }
 #courses h2{
     color: black;
@@ -1235,7 +1253,11 @@ Institution
 Amission
 ****************************************/
 #admission {
-    background-color: rgb(230, 222, 222);
+    background: -webkit-gradient(linear, left bottom, right top, from(#E6DEDE), to(rgb(173, 165, 165))); 
+    background: -webkit-linear-gradient(bottom left,                  #E6DEDE 0%,  rgb(173, 165, 165) 100%);
+    background: -moz-linear-gradient(bottom left,                     #E6DEDE 0%,  rgb(173, 165, 165) 100%);
+    background: -o-linear-gradient(bottom left,                       #E6DEDE 0%,  rgb(173, 165, 165) 100%);
+    background: linear-gradient(to top right,                         #E6DEDE 0%,  rgb(173, 165, 165) 100%);
 }
 #admission h2{
     color: black;
@@ -1973,9 +1995,7 @@ Institution
         width: 9%;
     }
     .logo2{
-        border-radius: 40% ;
-        border: 1px solid white;
-        width: 9%;
+        width: 8%;
         position: absolute;
         left: 2%;
         top: 16%;
@@ -1986,7 +2006,7 @@ Institution
         width: 10%;
         position: absolute;
         left: 2%;
-        top: 63%;
+        bottom: 0%;
         opacity: 0.5;
     }
 }
@@ -2792,7 +2812,7 @@ Principal's desk
 /* loader */
 
 #loading {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
