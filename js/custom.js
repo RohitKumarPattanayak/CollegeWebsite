@@ -69,7 +69,6 @@ jQuery(function($){
 // ****************************
 // contact-form sending email 
 // ****************************
-var stat = ''
 function SendEmail(e){
   var name = document.getElementById('name').value
   var email = document.getElementById('email').value

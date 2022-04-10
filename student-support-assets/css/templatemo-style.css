@@ -17,11 +17,8 @@
     background: linear-gradient(to top right, #E6DEDE 0%, rgb(124, 118, 118) 100%);
   }
   #studSuport{
-    background: -webkit-gradient(linear, left bottom, right top, from(#E6DEDE), to(rgb(83, 78, 78))); 
-    background: -webkit-linear-gradient(bottom left, #E6DEDE 0%, rgb(83, 78, 78) 100%);
-    background: -moz-linear-gradient(bottom left, #E6DEDE 0%, rgb(83, 78, 78) 100%);
-    background: -o-linear-gradient(bottom left, #E6DEDE 0%, rgb(83, 78, 78) 100%);
-    background: linear-gradient(to top right, #E6DEDE 0%, rgb(83, 78, 78) 100%);
+    background-color: transparent;
+    border: 6px black solid;
   }
   #breadcrumbs{
     background: -webkit-gradient(linear, left bottom, right top, from(#E6DEDE), to(whitesmoke)); 
@@ -101,9 +98,11 @@
   }
 .owl-next{
   box-shadow: 1px 2px 1px 2px rgba(21, 67, 76, 0.353);
+  border: grey 0.1px solid;
 }
 .owl-prev{
   box-shadow: 1px 2px 1px 2px rgba(21, 67, 76, 0.353);
+  border: grey 0.1px solid;
 }
   /*---------------------------------------
       TESTIMONIAL             
@@ -237,6 +236,10 @@
     }
     .courses-detail li{  
       font-size: small;
+    }
+    #studSuport{
+      background-color: transparent;
+      border: none;
     }
   }
   /*
